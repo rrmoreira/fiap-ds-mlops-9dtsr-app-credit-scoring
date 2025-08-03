@@ -18,7 +18,7 @@ def get_prediction(data):
         
         """
             Esta análise ocorre de forma automatizada, onde um modelo de Machine Learning
-            pré-treinado realiza a previsão de acordo com os dados do cliente fornecidos.
+            pré-treinado realiza a previsão de acordo com os dados fornecidos do cliente.
         """
                 
         predicted_value = result['prediction']
@@ -36,7 +36,7 @@ def get_prediction(data):
         st.markdown("Erro ao obter a previsão. Por favor, revise seus dados")
 
 """
-## Predição de Score de Crédito - QuantumFinance
+## QuantumFinance - Predição de Score de Crédito 
 
 Este modelo é capaz de prever um score de crédito ao cliente de acordo com o seu perfil.
 
