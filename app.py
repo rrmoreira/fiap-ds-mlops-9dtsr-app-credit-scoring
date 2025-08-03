@@ -50,10 +50,10 @@ age = st.number_input(
     "Qual a idade do cliente?",step=1)
 
 annual_income = st.number_input(
-    "Qual a renda anual do cliente (em USD)?",step=1, placeholder="Coloque 0, se nao houver renda anual.")
+    "Qual a renda anual do cliente (em USD)?", step=0.01, format="%.2f", placeholder="Coloque 0, se nao houver renda anual.")
 
 monthly_inhand_salary = st.number_input(
-    "Qual a renda mensal do cliente (em USD)?",step=1, placeholder="Coloque 0, se nao houver renda mensal.")
+    "Qual a renda mensal do cliente (em USD)?", step=0.01, format="%.2f", placeholder="Coloque 0, se nao houver renda mensal.")
 
 num_bank_accounts = st.number_input(
     "Quantas contas bancárias o cliente possui?",step=1, placeholder="Coloque 0, se nao houver contas bancárias.")
@@ -63,7 +63,7 @@ num_credit_card = st.number_input(
 
 interest_rate = st.number_input(
     "Qual a taxa de juros dos cartões de crédito (em %)?",
-    step=1,placeholder="Coloque 0, se nao houver cartões de crédito.")
+    step=0.01, format="%.2f", placeholder="Coloque 0, se nao houver cartões de crédito.")
 
 num_of_loan = st.number_input(
     "Quantos empréstimos o cliente possui?",step=1, placeholder="Coloque 0, se nao houver empréstimos.")    
@@ -78,27 +78,27 @@ num_of_delayed_payment = st.number_input(
 
 changed_credit_limit = st.number_input(
     "Qual o limite de crédito alterado (em USD)?",
-    step=1, placeholder="Coloque 0, se nao houver limite de crédito alterado.")
+    step=0.01, format="%.2f", placeholder="Coloque 0, se nao houver limite de crédito alterado.")
 
 num_credit_inquiries = st.number_input(
     "Quantas consultas de crédito foram feitas?",
     step=1, placeholder="Coloque 0, se nao houver consultas de crédito.")
 
 outstanding_debt = st.number_input(
-    "Qual o tamanho da dívida em aberto (em USD)?", step=1, placeholder="Coloque 0, se nao houver dívida em aberto.")
+    "Qual o tamanho da dívida em aberto (em USD)?", step=0.01, format="%.2f", placeholder="Coloque 0, se nao houver dívida em aberto.")
 
 total_emi_per_month = st.number_input(
-    "Qual o valor total das parcelas mensais (em USD)?", step=1, placeholder="Coloque 0, se nao houver parcelas mensais.")
+    "Qual o valor total das parcelas mensais (em USD)?", step=0.01, format="%.2f", placeholder="Coloque 0, se nao houver parcelas mensais.")
 
 credit_utilization_ratio = st.number_input(
-    "Qual a taxa de utilização de crédito (em %)?", step=1, placeholder="Coloque 0, se nao houver utilização de crédito.")
+    "Qual a taxa de utilização de crédito (em %)?", step=0.01, format="%.2f", placeholder="Coloque 0, se nao houver utilização de crédito.")
 
 amount_invested_monthly = st.number_input(
-    "Qual o valor investido mensalmente (em USD)?", step=1, placeholder="Coloque 0, se nao houver investimento mensal.")
+    "Qual o valor investido mensalmente (em USD)?", step=0.01, format="%.2f", placeholder="Coloque 0, se nao houver investimento mensal.")
 
 
 monthly_balance = st.number_input(
-    "Qual o saldo mensal (em USD)?", step=1, placeholder="Coloque 0, se nao houver saldo mensal.")
+    "Qual o saldo mensal (em USD)?", step=0.01, format="%.2f", placeholder="Coloque 0, se nao houver saldo mensal.")
 
 credit_mix = st.selectbox(
     "Qual o mix de crédito do cliente?",
